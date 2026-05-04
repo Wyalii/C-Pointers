@@ -1,0 +1,38 @@
+RAM.
+how data is stored in memory.
+like a vertical bar.
+each byte has an address.
+int allocates - 4 bytes.
+char - 1 byte.
+float - 4 bytes.
+
+for example if i have addresses: 201,202,203,204, and 205
+if i declare variable char a; it will take 1 adress at 201.
+if i declare variable int that takes 4 bytes it will take address from 201 to 204 because it takes 4 bytes.
+
+POINTERS - variables that store address of another variable.
+
+lets say i have int variable called A that equals 4 at memory address 204.
+i can create another variable lets say P that will hold address of A (204).
+
+int A; - normal variable.
+int *P; - pointer variable.
+&a - gives address of a.
+P = &a; - storing address of A in P.
+
+if we print P we will get address of A.
+if we print &A we will also get address if A.
+if we print &P we will get address of P.
+if we print *P it will give us actual value of A - DEREFRENCING.
+
+if we change the value of *P it will change value of variable a since it points to its address.
+
+P - ADDRESS.
+*P - VALUE AT ADDRESS.
+
+
+
+
+
+
+
