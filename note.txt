@@ -34,6 +34,17 @@ Pointer arithmetic.
 if integer variable P is at address 2000.
 printing P+1 will move on to address 2004 since int takes 4 bytes.
 
+pointer variables are STRONGLY typed!
+we need strongly typed pointers because we also need to dereference these variables aswell.
+dereference of variable is using *p to get actuall data at that address.
+since every data type takes different bytes we need pointers to be strongly typed.
+
+from line 25 i did typecasting that allowed me to use = operation on different types of variables.
+on line 24 i created char *p0 another pointer variable with char type.
+and with typecasting and dereference i made it equal to *p.
+since char *p0 litterly means - this is a pointer variable that holds/points to char. 
+then p0 = (char*)p means - p0 will hold address of p (that holds address of a) but will treat it as char (meaning it will only read 1 byte). 
+
 
 
 
