@@ -30,6 +30,10 @@ if we change the value of *P it will change value of variable a since it points 
 P - ADDRESS.
 *P - VALUE AT ADDRESS.
 
+Pointer arithmetic.
+if integer variable P is at address 2000.
+printing P+1 will move on to address 2004 since int takes 4 bytes.
+
 
 
 
