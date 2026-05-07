@@ -15,16 +15,25 @@ int main()
     // printf("size of integer is %d bytes\n", sizeof(int));
     // printf("value at P+1 is: %d", *p + 1);
 
-    int a = 1025;
-    int *p;
-    p = &a;
-    printf("size of integer is: %d\n", sizeof(int));
-    printf("P || ADDRESS = %d || VALUE = %d\n", p, *p);
-    printf("P+1 || ADDRESS = %d || VALUE = %d\n", p + 1, *p + 1);
-    char *p0;
-    p0 = (char *)p;
+    // int a = 1025;
+    // int *p;
+    // p = &a;
+    // printf("size of integer is: %d\n", sizeof(int));
+    // printf("P || ADDRESS = %d || VALUE = %d\n", p, *p);
+    // printf("P+1 || ADDRESS = %d || VALUE = %d\n", p + 1, *p + 1);
+    // char *p0;
+    // p0 = (char *)p;
 
-    printf("size of character is: %d\n", sizeof(char));
-    printf("P0 || ADDRESS = %d || VALUE = %d\n", p0, *p0);
+    // printf("size of character is: %d\n", sizeof(char));
+    // printf("P0 || ADDRESS = %d || VALUE = %d\n", p0, *p0);
+
+    int x = 5;
+    int *p = &x;
+    int **q = &p;
+    int ***r = &q;
+    printf("printed x: %d\n", x);
+    printf("printed *p: %d\n", *p);
+    printf("printed **q: %d\n", *(*q));
+    printf("printed ***r: %d\n", *(*(*r)));
     return 0;
 }
